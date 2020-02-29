@@ -1,0 +1,72 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/bar"
+        layout="@layout/app_bar_layout" />
+
+    <Spinner
+        android:layout_below="@+id/bar"
+        android:id="@+id/course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp" />
+
+    <Spinner
+        android:id="@+id/branch_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/course"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp" />
+
+    <Spinner
+
+        android:id="@+id/year_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/branch_spinner"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp" />
+
+
+    <Spinner
+
+        android:id="@+id/section_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/year_spinner"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp" />
+
+
+    <Button
+
+        android:id="@+id/procee_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+       
+        android:background="@drawable/buttonstyle"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/mprogressbar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
+

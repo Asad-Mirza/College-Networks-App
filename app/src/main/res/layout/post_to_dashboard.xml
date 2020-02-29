@@ -1,0 +1,138 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/materialBackground2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <include
+      layout="@layout/app_bar_layout"
+      android:id="@+id/app_bar"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<EditText
+
+    android:layout_marginTop="24dp"
+      android:textSize="16sp"
+       android:maxLength="45"
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Event name"
+      android:id="@+id/title"
+      android:paddingLeft="8dp"
+      android:paddingRight="10dp"
+      android:paddingTop="14dp"
+    android:maxLines="1"
+      android:paddingBottom="14dp"/>
+
+
+
+
+
+
+    <EditText
+        android:layout_marginTop="24dp"
+
+
+        android:paddingLeft="8dp"
+        android:paddingRight="10dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+
+        android:textSize="16sp"
+        android:hint="Event description"
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:id="@+id/dis"
+        android:maxLines="6"
+        android:scrollbars="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:lines="6"/>
+
+
+
+        <EditText
+            android:layout_marginTop="24dp"
+      android:textSize="16sp"
+
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Registration link (optional)"
+      android:id="@+id/link1"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"/>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <Button
+
+        android:textSize="16sp"
+
+     android:layout_toLeftOf="@id/imageView"
+
+
+        android:paddingLeft="14dp"
+        android:paddingRight="10dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+
+
+        android:elevation="0dp"
+        android:textAllCaps="false"
+        android:stateListAnimator="@null"
+        android:drawableTint="@color/materialTextColorHint"
+        android:drawableLeft="@drawable/ic_attach_file_white_18dp"
+
+        android:textColor="@color/materialTextColorHint"
+        android:textAlignment="textStart"
+        android:text="Upload image"
+        android:id="@+id/image_btn"
+        />
+        <ImageView
+android:visibility="gone"
+
+            android:src="@drawable/defaultimg"
+
+            android:layout_width="100dp"
+            android:id="@+id/imageView"
+            android:layout_height="100dp"
+            android:layout_weight="0"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

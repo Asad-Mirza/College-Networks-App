@@ -1,0 +1,31 @@
+<LinearLayout android:layout_height="match_parent"
+android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<include
+    layout="@layout/app_bar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        android:textColor="@color/materialTextColorPrimary"
+        android:textAlignment="center"
+        android:text="You have not uploaded any event yet \n Tap on + sign to upload one"/>
+    <ProgressBar
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/progress_bar"
+        android:layout_gravity="center"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"/>
+
+</LinearLayout>

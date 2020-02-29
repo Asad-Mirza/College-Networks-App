@@ -1,0 +1,31 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/appBarLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+     android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+  android:paddingBottom="8dp"
+       android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:background="@drawable/edit_text_background"
+        android:text="Add section..."
+        android:layout_below="@id/appBarLayout"
+        android:id="@+id/add_section"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="3dp"
+        android:layout_below="@id/add_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerview"/>
+
+
+</RelativeLayout>

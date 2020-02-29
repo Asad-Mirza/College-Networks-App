@@ -1,0 +1,76 @@
+<RelativeLayout
+    android:background="@color/white"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:paddingTop="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:id="@+id/branch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:padding="3dp"
+            android:text="CSE"
+            android:textColor="@color/materialTextColorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/branch"
+            android:padding="3dp"
+            android:text="A"
+            android:textColor="@color/materialTextColorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/branch"
+            android:layout_marginTop="10dp"
+            android:padding="3dp"
+            android:text="Second year"
+            android:textColor="@color/materialTextColorSecondary"
+
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/branch"
+            android:padding="3dp"
+            android:layout_marginRight="8dp"
+            android:text="B Tech"
+            android:textColor="@color/materialTextColorSecondary"
+            android:textSize="16sp" />
+
+
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="3dp"
+            android:background="@color/materialDividerColor" />
+
+
+    </RelativeLayout>
+
+
+

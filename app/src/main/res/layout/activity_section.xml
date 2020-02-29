@@ -1,0 +1,39 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".T.section"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_layout"/>
+    <TextView
+        android:layout_below="@+id/app_bar"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="16sp"
+        android:textAlignment="textStart"
+        android:background="@drawable/edit_text_background"
+        android:text="Add section..."
+        android:id="@+id/add_section"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/add_section"
+        android:layout_marginTop="4dp"
+
+        android:layout_centerHorizontal="true" />
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progressbar"/>
+
+
+</RelativeLayout>

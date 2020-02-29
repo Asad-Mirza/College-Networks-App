@@ -1,0 +1,99 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/materialBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<include layout="@layout/app_bar_layout"
+    android:id="@+id/app_bar"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:visibility="gone"
+
+        android:text="@string/notice_error_text"
+        tools:ignore="HardcodedText" />
+
+    <com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/swipe_refresh"
+android:background="@color/materialBackground2"
+app:srl_direction="both"
+xmlns:android="http://schemas.android.com/apk/res/android">
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/materialBackground2"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+      android:visibility="gone"
+
+        />
+
+
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/progress_bar"
+        android:layout_gravity="center"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:nestedScrollingEnabled="false"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentTop="true"
+
+        android:id="@+id/recyclerview"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:id="@+id/loadmoreTextView"
+        android:textSize="12sp"
+        android:textColor="@color/materialTextColorHint"
+        android:layout_marginTop="4dp"
+        android:text="swipe up to load more "
+        android:layout_marginBottom="6dp"
+        android:layout_below="@id/recyclerview"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+
+
+
+
+
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</com.omadahealth.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+</LinearLayout>

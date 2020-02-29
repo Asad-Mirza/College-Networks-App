@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#104d7a</color>
+    <color name="colorAccent">#e91e63</color>
+    <color name="white">#ffffff</color>
+    <color name="materialBackground">#fafafa</color>
+    <color name="materialBackground2">#f5f5f5</color>
+    <color name="materialTextColor">#57000000</color>
+    <color name="materialTextColorPrimary">#D9000000</color>
+    <color name="materialTextColorSecondary">#8C000000</color>
+    <color name="materialTextColorHint">#59000000</color>
+    <color name="materialDividerColor">#26000000</color>
+    <color name="tabunselected">#70ffffff</color>
+    <color name="fbBackgroundColor">#EEF4FF</color>
+    <color name="loginColor">#dd2476</color>
+    <color name="translucentColor">#32ffffff</color>
+    <color name="whitetrans">#b4ffffff</color>
+    <color name="whitetrans2">#c8ffffff</color>
+    <color name="logo_orange">#ff9a05</color>
+    <color name="lightblue">#2F3635</color>
+
+
+</resources>

@@ -1,0 +1,89 @@
+<RelativeLayout android:layout_height="match_parent"
+    android:background="@drawable/comment_dialog_backgroud"
+    android:layout_width="match_parent"
+    android:layout_marginTop="50dp"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_close_black_18dp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/q_text"
+    android:text="Who is the prime minister of India"
+    android:textSize="16sp"
+    android:textColor="@color/materialTextColorPrimary"
+    android:textStyle="bold"
+    android:padding="6dp"
+    android:layout_margin="8dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/asked_by"
+        android:text="Asked by Asad Mirza"
+        android:textSize="14sp"
+        android:layout_below="@id/q_text"
+         android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+
+        android:textColor="@color/materialTextColorPrimary"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:text="2 days ago"
+        android:textSize="14sp"
+        android:layout_below="@id/asked_by"
+
+
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+
+        android:textColor="@color/materialTextColorPrimary"
+        />
+
+    <EditText
+        android:padding="6dp"
+        android:layout_marginTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="8dp"
+        android:layout_below="@id/time"
+        android:inputType="textMultiLine"
+        android:hint="Write your answer..."
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:lines="5"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:layout_marginRight="8dp"
+       android:layout_marginLeft="8dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/answer_edit_text"
+        android:background="@drawable/edit_text_background"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/button"
+        android:layout_below="@id/answer_edit_text"
+        android:text="Submit"
+
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"        />
+
+</RelativeLayout>

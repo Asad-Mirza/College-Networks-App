@@ -1,0 +1,88 @@
+<RelativeLayout android:layout_height="wrap_content"
+android:layout_width="match_parent"
+   android:paddingTop="24dp"
+    android:background="@color/white"
+    android:id="@+id/relativelayout"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/image">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="6dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        />
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        style="@android:style/Widget.Holo.ProgressBar.Small.Title"
+        android:id="@+id/progress_bar"
+
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/hang_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/hang_time"
+        android:text="Spandan"
+        android:textColor="@color/materialTextColorPrimary"
+        android:textSize="16sp" />
+    <TextView
+
+       android:layout_below="@id/hang_name"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@id/image"
+
+        android:layout_width="wrap_content"
+        android:textSize="12sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/hang_time"
+        android:text="12 Hours ago"
+        android:textColor="@color/materialTextColorSecondary"/>
+
+    <TextView
+   android:layout_toRightOf="@id/hang_time"
+android:layout_marginStart="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/textViewOptions"
+
+        android:id="@+id/hang_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:paddingBottom="10dp"
+       android:layout_marginEnd="16dp"
+        android:textAlignment="textEnd"
+        android:layout_alignParentRight="true"
+        android:text="Under Verification"
+        android:textColor="@color/materialTextColorPrimary"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_marginRight="12dp"
+        android:id="@+id/textViewOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="&#8942;"
+        android:textSize="20sp"
+        android:textStyle=""
+        android:textColor="@color/materialTextColorPrimary" />
+    <View
+        android:layout_below="@id/image"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="24dp"
+        android:background="@color/materialDividerColor" />
+
+</RelativeLayout>

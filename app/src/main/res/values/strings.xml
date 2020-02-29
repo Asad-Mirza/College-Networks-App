@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">College Networks</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_community">communityActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="facebook_app_id">2076407602641725</string>
+    <string name="fb_login_protocol_scheme">fb2076407602641725</string>
+    <string name="anonyfeedheader">Help your college, make it a more better one. \nShare your views about its facilities. You can also share any of your problem related to your college or suggest something new. \n\nWe will send your feedback to your College Management. \n\nWe will not disclose your identity. \nSo, be honest ! </string>
+    <string name="notice_error_text">No Notice Found.   \nIf you are having any problem in receiving notice, you can contact us in Help and Feedback page  \n\nYou can also contact us through email help.collegenetwork@gmail.com</string>
+
+
+</resources>

@@ -1,0 +1,80 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/materialBackground2"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <include
+        layout="@layout/app_bar_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/app_bar"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:layout_below="@id/app_bar"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:id="@+id/headerText"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_bar"
+        android:text="Help us to improve this App. \nPlease send us your valuable feedback  " />
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="2dp"
+        android:layout_below="@id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <EditText
+        android:padding="8dp"
+        android:textColor="@color/materialTextColorPrimary"
+        android:textSize="17sp"
+
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/feedback_editext"
+        android:background="@android:color/transparent"
+        android:maxLines="2"
+
+        android:hint="Discuss a issue or suggest a feature..."/>
+
+
+</android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:layout_below="@id/cardview"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/materialTextColorPrimary"
+
+    android:textAlignment="center"
+        android:selectAllOnFocus="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/email2"
+        android:textSize="13sp"
+    android:textIsSelectable="true"
+
+
+    android:text="Contact via Email : help.collegenetwork@gmail.com"
+
+    />
+
+
+
+</RelativeLayout>

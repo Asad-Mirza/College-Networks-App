@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".J.NExceptionHandler">
+
+
+    <include
+        android:id="@+id/bar"
+        layout="@layout/app_bar_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/linear"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bar">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_toStartOf="@+id/next"
+        android:background="@drawable/layout_round"
+        android:elevation="1dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+
+            android:id="@+id/notice_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/image_attachment"
+            android:elevation="2dp" />
+
+        <EditText
+            android:id="@+id/notice_dis"
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/notice_image"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="start|center"
+            android:hint=" Write a Notice"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="2000"
+            android:maxLines="4"
+            android:scrollbars="vertical"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/linear"
+        android:layout_marginBottom="8dp"
+        android:background="@color/translucentColor"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/menu1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/gallery" />
+
+            <ImageButton
+                android:id="@+id/menu2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@+id/menu1"
+                android:background="@drawable/docs" />
+
+            <ImageButton
+                android:id="@+id/menu3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@+id/menu2"
+                android:background="@drawable/camera" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar"
+        android:background="@color/materialTextColorSecondary"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/circularProgressbar"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Uploading... "
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+
+            android:id="@+id/circularProgressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/circular"
+            android:secondaryProgress="100" />
+
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="100%"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <ImageButton
+
+        android:id="@+id/next"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/linear"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/notice_up"
+        android:elevation="2dp" />
+
+
+    <RelativeLayout
+
+        android:id="@+id/data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/textsize"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:gravity="center"
+            android:text="Size  :"
+            android:textColor="@color/lightblue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textsize"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/delete"
+            android:layout_toRightOf="@+id/textsize"
+            android:text="30Mb"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/exit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vsize"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:text="Size of the file  should not exceed more then 50 MB."
+            android:textColor="@color/lightblue"
+
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

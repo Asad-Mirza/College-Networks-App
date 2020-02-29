@@ -1,0 +1,179 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollView"
+   android:background="@color/materialBackground2"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/progress_bar"/>
+
+
+
+
+            <TextView
+                android:background="@color/logo_orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="35dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+ android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:id="@+id/clgname"
+                android:textColor="@color/white"
+                android:text="Shri Vaishnav Vidyapeeth Viswavidyalaya"/>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clgname"
+
+           android:id="@+id/relativelayout2"
+
+            >
+
+            <TextView
+                android:id="@+id/signin"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/materialTextColorPrimary"
+
+                android:gravity="center"
+                android:text="Fill your details"
+
+                android:textSize="16sp"
+                />
+
+            <Spinner
+
+                android:id="@+id/course_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"
+
+
+                android:layout_alignStart="@+id/branch_spinner"
+                android:layout_below="@+id/signin"
+                android:layout_marginTop="25dp" />
+
+
+
+            <Spinner
+                android:id="@+id/branch_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:layout_below="@+id/course_spinner"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+               />
+
+
+
+            <Spinner
+               android:id="@+id/year_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/branch_spinner"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="25dp"
+                />
+
+            <Spinner
+               android:id="@+id/section_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/year_spinner"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="25dp"
+                 />
+
+            <CheckBox
+                android:layout_marginLeft="30dp"
+                android:id="@+id/checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/section_spinner"
+                android:layout_marginTop="25dp"
+                android:text="Faculty Login"
+                android:textColor="@color/materialTextColorPrimary" />
+            <com.facebook.login.widget.LoginButton
+
+
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="25dp"
+                android:id="@+id/login_button"
+                android:layout_marginLeft="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/checkbox"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+               />
+
+            <com.google.android.gms.common.SignInButton
+                android:layout_below="@id/login_button"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+
+                android:id="@+id/googlebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+
+
+
+                android:layout_centerHorizontal="true"
+
+
+
+
+
+
+               />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/helpTextView"
+                android:layout_below="@id/googlebtn"
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/materialTextColorSecondary"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:text="Need Help ?"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

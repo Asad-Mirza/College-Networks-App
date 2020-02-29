@@ -1,0 +1,25 @@
+<android.support.design.widget.AppBarLayout
+    android:background="@color/white"
+
+    android:elevation="2dp"
+
+
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            app:titleTextColor="@color/materialTextColorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/materialBackground2"
+            app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
+
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>

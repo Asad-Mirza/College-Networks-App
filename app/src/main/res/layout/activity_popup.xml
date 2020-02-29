@@ -1,0 +1,99 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_popup_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/materialBackground"
+
+
+    >
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar_layout_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/relativelayout"
+        android:layout_below="@+id/app_bar">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+             android:nestedScrollingEnabled="true"
+
+            />
+
+    </ScrollView>
+
+
+    <RelativeLayout
+
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/tabunselected" />
+
+        <EditText
+            android:id="@+id/comment_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="4dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/comment_button"
+            android:background="@color/white"
+            android:hint="Add a comment..."
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="2000"
+            android:maxLines="4"
+            android:padding="7dp"
+            android:scrollbars="vertical"
+            android:textSize="16sp" />
+
+        <Button
+
+            android:id="@+id/comment_button"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorPrimary"
+            android:drawableStart="@drawable/ic_done_white_24dp"
+
+            android:drawableTint="@color/white"
+            android:padding="10dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

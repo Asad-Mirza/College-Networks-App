@@ -1,0 +1,273 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <include
+        layout="@layout/app_bar_layout"
+        android:id="@+id/app_bar"
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <ProgressBar
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar2"
+        android:layout_below="@id/app_bar"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_below="@id/app_bar"
+        android:layout_above="@id/temp"
+
+
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+        android:transitionName="profile"
+            android:id="@+id/nameNdp"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/hang_dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/pro_pic" />
+
+            <TextView
+                android:id="@+id/hang_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@+id/hang_dp"
+                android:text="My SVVV Team"
+                android:textColor="@color/materialTextColorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hang_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/hang_name"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@+id/hang_dp"
+                android:text="23 hours ago"
+                android:textColor="@color/materialTextColorSecondary"
+
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+            <ImageView
+                android:transitionName="trans_image"
+                android:id="@+id/hang_image"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:id="@+id/titleandDis"
+                >
+                <ProgressBar
+                    android:layout_alignParentTop="true"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/progress_bar"
+                    android:layout_marginTop="100dp"
+                    style="@android:style/Widget.Holo.ProgressBar.Small.Title"
+
+                    android:layout_marginBottom="100dp"
+                    android:layout_centerHorizontal="true"/>
+
+
+                <TextView
+                    android:transitionName="trans_title"
+                    android:id="@+id/hang_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:layout_marginTop="6dp"
+
+
+android:layout_below="@id/progress_bar"
+                    android:gravity="start"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textIsSelectable="true"
+                    android:textColor="@color/materialTextColorPrimary"
+                    android:text="Welcome to My SVVV App"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+
+                    android:transitionName="trans_dis"
+                    android:textColor="@color/materialTextColorSecondary"
+                    android:autoLink="all"
+                    android:id="@+id/hang_dis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/hang_title"
+                    android:ellipsize="end"
+                    android:linksClickable="true"
+
+
+                    android:gravity="start"
+
+                    android:paddingTop="5dp"
+                    android:textIsSelectable="true"
+
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="This is a modern App.Now every latest stuff from SVVV is in your pocket.This is also a educational app.You can ask you doubts in My SVVV community section .Expert will than answer your question"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="fill"
+
+            android:weightSum="3"
+            android:layout_marginBottom="38dp"
+
+
+
+            >
+
+            <Button
+
+                android:id="@+id/comment_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:drawableTint="@color/materialTextColorSecondary"
+
+
+
+
+                android:drawableLeft="@drawable/ic_comment_black_18dp"
+
+
+
+
+                android:textAllCaps="false"
+
+                android:text=" Comment"
+                android:textColor="@color/materialTextColorSecondary"
+                />
+
+
+            <Button
+                android:id="@+id/share_button"
+                android:layout_alignParentRight="true"
+
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:drawableTint="@color/materialTextColorSecondary"
+
+
+
+                android:drawableLeft="@drawable/ic_near_me_black_24dp"
+
+                android:text=" Share"
+                android:textAllCaps="false"
+                android:textColor="@color/materialTextColorSecondary"
+
+
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+
+
+
+        android:id="@+id/temp"/>
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+
+        android:layout_alignParentBottom="true"
+
+        android:id="@+id/registor_button"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        android:text="Register now"/>
+
+
+
+
+
+</RelativeLayout>
+

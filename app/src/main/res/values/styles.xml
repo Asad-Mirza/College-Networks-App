@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/materialBackground</item>
+        <item name="android:textColor">@color/materialTextColorPrimary</item>
+        <item name="android:textColorPrimary">@color/materialTextColorPrimary</item>
+        <item name="android:textColorSecondary">@color/materialTextColorPrimary</item>
+        <item name="android:textColorHint">@color/materialTextColorHint</item>
+        <item name="android:divider">@color/materialDividerColor</item>
+        <item name="android:actionMenuTextAppearance">@color/materialTextColorPrimary</item>
+        <item name="android:actionMenuTextColor">@color/materialTextColorPrimary</item>
+        <item name="android:windowContentTransitions">true</item>
+
+
+    </style>
+
+    <style name="AppThemeWithBlackStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+
+    <style name="AppThemeWithWhiteStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/materialBackground2</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.communityTheme">
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    //splash screen
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+
+    </style>
+    //ending
+
+    //login screen
+
+    <style name="LoginTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/materialTextColorPrimary</item>
+        <item name="android:statusBarColor">@color/logo_orange</item>
+        <item name="android:windowBackground">@drawable/login_gradint</item>
+    </style>
+    //ending
+
+    <style name="LoginTheme2">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>
+
+
